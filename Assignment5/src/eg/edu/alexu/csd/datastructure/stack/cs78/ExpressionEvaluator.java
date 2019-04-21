@@ -4,6 +4,7 @@ public class ExpressionEvaluator implements IExpressionEvaluator {
 
 	public String infixToPostfix(String expression) {
 		char[] postfix = new char[100];
+		String s = new String() ;
 		int counter = 0;
 		stack stack = new stack();
 		stack stack1= new stack() ;
@@ -69,12 +70,11 @@ public class ExpressionEvaluator implements IExpressionEvaluator {
 			stack1.pop();
 		}
 		for (int l = 0; l < counter; l++) {
-			System.out.print((char)postfix[l]);
+			s+=(char)postfix[l];
 		}
-		String s = new String();
-//		s= postfix.toString();
+		
 
-	return postfix.toString() ;
+	return s ;
 	}
 
 	public int evaluate(String expression) {
