@@ -12,7 +12,7 @@ private	Node top;
 	public Object pop() {
 		if(isEmpty()) {
 			System.out.println("stack is empty");
-			return 0 ;
+			return null ;
 		}
 		Node temp ;
 		temp = top ;
@@ -28,7 +28,7 @@ private	Node top;
        }
        else {
     	   System.out.println("stack is empty");
-    	   return 0 ;
+    	   return null ;
        }
 	}
 
